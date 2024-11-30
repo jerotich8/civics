@@ -1,5 +1,5 @@
 const db = require('../config/database');
-const analyzeSentiment = require('../services/sentiment');
+
 
 
 exports.postDiscussion = async(req,res) =>{
