@@ -85,15 +85,6 @@ const createTables = async(db) => {
             FOREIGN KEY (user_id) REFERENCES users(user_id)
         )`    
 
-    const analysisTable = `
-        CREATE TABLE IF NOT EXISTS sentiment_analysis(
-            analysis_id INT PRIMARY KEY AUTO_INCREMENT,
-            target_type ENUM ("post","comment") NOT NULL,
-            target_id INT NOT NULL,
-            sentiment ENUM("positive","neutral","negative") NOT NULL,
-            confidence_score FLOAT NOT NULL,
-            created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-        )`
 
         try {
             await db.query(usersTable);
@@ -108,8 +99,6 @@ const createTables = async(db) => {
             await db.query(eventsTable);
             console.log('Events table created or already exists.');
 
-            await db.query(analysisTable);
-            console.log('Sentiment_analysis table created or already exists.');
     
     
         } catch (error) {
