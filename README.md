@@ -33,7 +33,7 @@ Civics is an innovative platform designed to foster meaningful community engagem
    - Create a `.env` file and add your keys (e.g., database credentials).
 5. Run the development server:
    ```bash
-   npm start
+   node server.js
    ```
    
 ## Usage
