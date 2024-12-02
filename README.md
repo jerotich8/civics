@@ -40,7 +40,7 @@ Civics is an innovative platform designed to foster meaningful community engagem
 - Visit the platform's homepage to view and participate in discussions.
 - Create new discussions, comment, and share opinions with the community.
 - Organize and promote events that align with your civic goals.
-- Analyze the sentiment of discussions to gauge public opinion.
+
 
 ## Contributing
 We welcome contributions! To contribute:
