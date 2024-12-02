@@ -16,6 +16,7 @@ dotenv.config();
 
 app.use('/civics/api/users', require('./routes/auth'));
 app.use('/civics/api', require('./routes/civics'));
+app.use('/civics', require('./routes/event'));
 
 
 
